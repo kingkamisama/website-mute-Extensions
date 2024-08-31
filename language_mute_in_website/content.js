@@ -17,7 +17,9 @@ chrome.storage.local.get('languages', (data) => {
         en: /[a-zA-Z]/,       // 英語
         ja: /[\u3040-\u309F\u30A0-\u30FF\u31F0-\u31FF\u4E00-\u9FAF]/, // 日本語
         sa: /[\u0900-\u097F]/, // サンスクリット語 (デーヴァナーガリー文字)
-        vi: /[\u0102-\u0103\u1E00-\u1E9F\u2C60-\u2C7F]/ // ベトナム語
+        vi: /[\u0102-\u0103\u1E00-\u1E9F\u2C60-\u2C7F]/, // ベトナム語
+        zh: /[\u4E00-\u9FFF\u3400-\u4DBF\u20000-\u2A6DF\uF900-\uFAFF]/, // 中国語
+        ko: /[\uAC00-\uD7AF\u1100-\u11FF]/ // 韓国語
     };
 
     // 選択された言語に応じた正規表現を適用
